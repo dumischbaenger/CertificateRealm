@@ -42,6 +42,7 @@ EOF
 
 cp "$warFile"  "$glassFishDir/glassfish/domains/domain1/autodeploy/"
 
+export AS_START_TIMEOUT=$(expr 2 \* 60 \* 1000)
 #BD Glassfish starten
 asadmin start-domain 
 
